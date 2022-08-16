@@ -33,6 +33,13 @@ function subseqSum(index, result, s, arr, sum, n) {
 }
 
 //Technique to print only one sub
+/**
+ * If the base condtion satisfied
+ * If the s is equal to sum, return true
+ * else return false
+ * Put recursion function calls inside the condtional statement
+ * If non are executed then return false
+ */
 function firstSubseq(index, result, s, arr, sum, n) {
   if (n === index) {
     //Condition satisfied
@@ -55,6 +62,13 @@ function firstSubseq(index, result, s, arr, sum, n) {
 }
 
 //Count the subsequence of sum K
+/**
+ * If the base condtion satisfied
+ * If the s is equal to sum, return 1
+ * else return o
+ * use two variable for storing left and right recursion calls
+ * return left + right
+ */
 function countSubseq(index, s, arr, sum, n) {
   if (n === index) {
     //Condition satisfied
