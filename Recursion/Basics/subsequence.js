@@ -66,8 +66,8 @@ function firstSubseq(index, result, s, arr, sum, n) {
  * If the base condtion satisfied
  * If the s is equal to sum, return 1
  * else return o
- * use two variable for storing left and right recursion calls
- * return left + right
+ * use two variable for storing left and right
+ * If non are executed then return false
  */
 function countSubseq(index, s, arr, sum, n) {
   if (n === index) {
