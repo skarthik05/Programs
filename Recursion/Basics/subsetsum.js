@@ -1,3 +1,4 @@
+//callculating the sum of all the subsets
 function helpersubsetsum(index, sum, arr, ans) {
   if (index === arr.length) {
     console.log({ sum });
@@ -15,10 +16,10 @@ function subsetsum(nums) {
   ans.sort((a, b) => a - b);
   return ans;
 }
-// const nums = [3, 2, 1];
-// const result = subsetsum(nums);
-// console.log({ result });
-
+const nums = [3, 2, 1];
+const result = subsetsum(nums);
+console.log({ result });
+//storing the unique subset
 function helpersubsetsum1(index, num1, ds, ans) {
   ans.push([...ds]);
   for (let i = index; i <= num1.length - 1; i++) {
@@ -37,3 +38,7 @@ function subsetsum1(num1) {
 const num1 = [1, 2, 2];
 const result1 = subsetsum1(num1);
 console.log({ result1 });
+
+//TC : O(2^N * N) where 2^N is the recursion call, N is the subset(i.e.,putting ds into ans or avg length)
+//SC : O(2^N * K)
+//AS: O(N )
